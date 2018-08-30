@@ -55,6 +55,6 @@ result4_summ<- result3 %>%
 ## C3. remove column "activity" which is an ID an not needed as we have activity description
 result4_summ[3]<-NULL
 ## C4. write the data to a file
-write.table(result4_summ, file="feature_mean_sd.csv", sep=",")
+write.table(result4_summ, file="feature_mean_sd.txt", sep=",", row.name=FALSE)
 
 ## Note: numbers from the column names are not removed as it serves as a link with original file.
